@@ -141,7 +141,18 @@ CastPlayer.prototype.traverseLinks = function() {
       childnodes[j].style.display = 'block';
     }
   }
+  var tp = document.getElementById("toggleplayer");
+  tp.addEventListener('click', this.togglePlayer.bind(this) );
 };
+
+CastPlayer.prototype.togglePlayer = function() {
+  var mv = document.getElementById("main_video");
+  if (mv.style.display == 'none') {
+    mv.style.display = 'block';
+  } else {
+    mv.style.display = 'none';
+  }
+};	
 
 CastPlayer.prototype.toggleVisibility = function(node) {
   // alert(node.nodeName); 

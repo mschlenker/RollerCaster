@@ -469,3 +469,19 @@ div.dirlisting {
 #medialist > div.dirlisting {
 	width: 480px;
 }
+
+#toggleplayer {
+	margin: 2px;
+        padding: 5px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: yellow;
+	color: yellow;
+	background-color: black;
+	position: fixed;
+        left: 10px; 
+        top: 10px;
+        z-index: 4000;
+        width:480px;
+
+}
