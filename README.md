@@ -5,7 +5,7 @@ This application started as a prove of concept that it can be easy and comfortab
 
 ![screen shot](https://raw.githubusercontent.com/mschlenker/RollerCaster/master/screenshots/rollercaster-alpha.png)
 
-Since the media list is a static HTML file, streaming can be done from nearly any web server that supports setting mime types and allows seekable access to files. This project borrows heavily from https://github.com/googlecast/CastVideos-chrome, thus the Apache license is kept. 
+Since the media list is a static HTML file, streaming can be done from nearly any web server that supports setting mime types and allows seekable access to files. This project borrows heavily from https://github.com/googlecast/CastVideos-chrome, thus the Apache license is kept. The app uses Chromecast's (pretty basic) standard player (no custom backgrounds, no custom UI elements, just timeline, description and an image) since casting to this player does not require an API key. Requiring an API key would be very problematic since it is bound to a certain website that is reachable from the internet - which is *exactly what we do not want*!
 
 ## Prepare your web server
 
