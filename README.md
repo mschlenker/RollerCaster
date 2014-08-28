@@ -25,6 +25,8 @@ ruby traverse_dir.rb /var/www/html/RollerCaster http://12.34.56.78/RollerCaster 
   > /var/www/html/RollerCaster/video.html
 ```
 
+Of course you have to run this script every time you make changes to your video directories!
+
 ## Open the player
 
 Now navigate to `http://12.34.56.78/RollerCaster/video.html`, navigate through your media directories, select a video and play it. Have fun! 
@@ -33,5 +35,15 @@ You can send the video to Chromecast by clicking on the cast icon. The "Toggle p
 
 ## What's next?
 
-In it's current state, this app "just works": You can select a video, play fullscreen, toggle between local and Chromecast playback. But the interface is ugly, clunky and rough, I will clean this up during the next days. 
+In it's current state, this app "just works": You can select a video, play fullscreen, toggle between local and Chromecast playback. But the interface is ugly, clunky and rough, I will clean this up during the next days. Here is what to expect to happen:
 
+* Clean up dead JavaScript code
+* Fix bug: when started without a Chromecast present, the play/pause button might stay inactive
+* Create a nicer user interface in two pane layout (landscape)
+* Adjust this user interface to portrait mode (player on top, list below) for Windows 8 tablets
+* Make player window invisible when casting to Chromecast, just show controls (play/pause, timeline, volume...)
+* Add selection of subtitles
+* Add selection of audio tracks
+* Show an image if an jpeg exists with the same name as the movie
+* Show text description if it exists
+* Eventually add an Android app that parses the HTML and uses the Android API to send the video to the ChromeCast
