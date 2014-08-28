@@ -12,7 +12,7 @@ Since the media list is a static HTML file, streaming can be done from nearly an
 Put some files on your web server, to test if the mime types are set correctly:
 
 1. This Big Buck Bunny is known to play in Chrome, if opened from the local server it should play fine within Chrome http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4
-2. Prepare an MKV with a h.264 video track and MP3 audio track(s), if Chrome tries to download the file, cheat a bit by declaring a mime type that Chrome accepts, like `AddType video/mp4 .mkv` in Apaches `mime.conf`
+2. Prepare an MKV with a h.264 video track and MP3 audio track(s), if Chrome tries to download the file, cheat a bit by declaring a mime type that Chrome accepts, like `AddType video/mp4 .mkv` in Apaches `mime.conf` - after a restart of your web server Chrome should play the video within the browser window.
 
 ## Create the HTML file
 
