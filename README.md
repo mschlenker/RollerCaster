@@ -39,7 +39,7 @@ In it's current state, this app "just works": You can select a video, play fulls
 
 * Clean up dead JavaScript code
 * Fix bug: when started without a Chromecast present, the play/pause button might stay inactive
-* Create a nicer user interface in two pane layout (landscape)
+* Create a nicer user interface in two pane layout (landscape) - you are welcome to contribute mockups!
 * Adjust this user interface to portrait mode (player on top, list below) for Windows 8 tablets
 * Make player window invisible when casting to Chromecast, just show controls (play/pause, timeline, volume...)
 * Add selection of subtitles
@@ -47,3 +47,9 @@ In it's current state, this app "just works": You can select a video, play fulls
 * Show an image if an jpeg exists with the same name as the movie
 * Show text description if it exists
 * Eventually add an Android app that parses the HTML and uses the Android API to send the video to the ChromeCast
+
+## Questions?
+
+You might contact me by mail ms@mattiasschlenker.de if you have questions, I guess I'll create some FAQ soon. If you run into issues, please create a GitHub account and use the link "Issues" on the right pane.
+
+
