@@ -19,7 +19,8 @@ Now add a directory structure for your videos below the RollerCaster directory. 
 Then run the supplied ruby script to generate the static HTML file. the script takes two parameters, local web root and http web root and writes to standard output. Assuming your RollerCaster installation lives in `/var/www/html/RollerCaster` and this directory maps to `http://12.34.56.78/RollerCaster` you run:
 
 ```shell
-ruby traverse_dir.rb /var/www/html/RollerCaster http://12.34.56.78/RollerCaster > /var/www/html/RollerCaster/video.html
+ruby traverse_dir.rb /var/www/html/RollerCaster http://12.34.56.78/RollerCaster \
+  > /var/www/html/RollerCaster/video.html
 ```
 
 ## Open the player
