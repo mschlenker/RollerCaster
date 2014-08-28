@@ -50,6 +50,6 @@ In it's current state, this app "just works": You can select a video, play fulls
 
 ## Questions?
 
-You might contact me by mail ms@mattiasschlenker.de if you have questions, I guess I'll create some FAQ soon. If you run into issues, please create a GitHub account and use the link "Issues" on the right pane.
+You might contact me by mail ms@mattiasschlenker.de if you have questions, I guess I'll create some FAQ soon. If you run into issues or bugs, please create a GitHub account and use the link "Issues" on the right pane to report.
 
 
