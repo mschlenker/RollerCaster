@@ -511,6 +511,17 @@ div.dirlisting div.dirlisting {
 	font-weight: bold;
 }
 
+#medialist div.dirlisting a {
+	color: yellow;
+}
+
+#medialist div.dirlisting ul li {
+	list-style-type: none;
+	border-width: 0px;
+	border-top-width: 1px;
+	border-color: gray;
+}
+
 #toggleplayer {
 	/* display: none; */
 	margin: 2px;
@@ -537,7 +548,7 @@ div.dirlisting div.dirlisting {
 	color: white;
 	font-weight: bold;
 	font-size: 120%; 
-	opacity: 0.7;
+	/* opacity: 0.7; */ 
 	padding: 10px;
 }
 
