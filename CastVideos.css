@@ -507,23 +507,21 @@ div.dirlisting {
 #toggleplayer {
 	/* display: none; */
 	margin: 2px;
-        padding: 5px;
-        border-style: solid;
-        border-width: 1px;
-        border-color: yellow;
+	padding: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: yellow;
 	color: yellow;
 	background-color: black;
 	position: fixed;
-        left: 10px; 
-        top: 60px;
-        z-index: 4000;
-        width:480px;
-
+	right: 10px; 
+	top: 10px;
+	z-index: 4000;
 }
 
 #upperbar {
 	position: fixed;
-	height: 45px;
+	height: 35px;
 	left: 0px;
 	top: 0px;
 	width: 100%;
