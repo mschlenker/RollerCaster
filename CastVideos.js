@@ -321,8 +321,8 @@ CastPlayer.prototype.selectMediaByURL = function(url) {
   pi.style.marginLeft = -21 - PROGRESS_BAR_WIDTH + 'px';
 
   if( !this.currentMediaSession ) {
-    var tp = document.getElementById("toggleplayer");
-    tp.style.display = 'block';
+    // var tp = document.getElementById("toggleplayer");
+    // tp.style.display = 'block';
     var mv = document.getElementsByClassName("imageSub")[0];
     mv.style.display = 'block';
     var loc = document.getElementById("locally");
