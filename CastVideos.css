@@ -528,7 +528,8 @@ div.dirlisting {
 	top: 0px;
 	width: 100%;
 	z-index: 250;
-	background-color: black;
+	margin: 0px; 
+    background-color: black;
 	color: white;
 	font-weight: bold;
 	font-size: 130%; 
