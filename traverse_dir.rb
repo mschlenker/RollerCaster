@@ -95,7 +95,7 @@ puts "<script type=\"text/javascript\" src=\"https://www.gstatic.com/cv/js/sende
 puts "<script type=\"text/javascript\" src=\"CastVideos.js\"></script>"
 puts "</head><body>"
 puts "<div id=\"toggleplayer\">Toggle player</div>"
-puts "<div id=\"upperbar\">Currently playing: "
+puts "<div id=\"upperbar\"><span id=\"rollercaster\">RollerCaster</span>: "
 puts "         <span id=\"upperinfo\">nothing</span> <span id=\"onchromecast\">(on Chromecast)</span><span id=\"locally\">(locally)</span>"
 puts "</div>"
 puts "<div id=\"main_video\">"

@@ -474,7 +474,7 @@ div.imageSub div.label {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 64px;
-	padding-top: 64px;
+	padding-top: 44px;
 	color: white;
 	/* background-color: black;
 	opacity: 0.7; */
@@ -499,6 +499,7 @@ div.dirlisting div.dirlisting {
 
 #medialist > div.dirlisting {
 	width: 97%;
+	padding-left: 0px;
 }
 
 #medialist > div.dirlisting > div.dirlisting > p {
@@ -542,4 +543,8 @@ div.dirlisting div.dirlisting {
 
 #onchromecast {
 	display: none; 
+}
+
+#rollercaster {
+	color: yellow;
 }
