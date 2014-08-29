@@ -520,8 +520,8 @@ div.dirlisting div.dirlisting {
 	color: yellow;
 	background-color: black;
 	position: fixed;
-	right: 10px; 
-	top: 10px;
+	right: 3px; 
+	top: 3px;
 	z-index: 4000;
 }
 
