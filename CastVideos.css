@@ -474,6 +474,7 @@ div.imageSub div.label {
 	margin-top: 0px;
 	margin-bottom: 0px;
 	padding-bottom: 64px;
+	padding-top: 64px;
 	color: white;
 	/* background-color: black;
 	opacity: 0.7; */
@@ -514,8 +515,18 @@ div.dirlisting {
 	background-color: black;
 	position: fixed;
         left: 10px; 
-        top: 10px;
+        top: 60px;
         z-index: 4000;
         width:480px;
 
+}
+
+#upperbar {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	z-index: 250;
+	background-color: black;
+	opacity: 0.7;
 }
