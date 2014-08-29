@@ -947,7 +947,7 @@ CastPlayer.prototype.updateDisplayMessage = function() {
     var loc = document.getElementById("locally");
     loc.style.display = 'inline';
     var cc = document.getElementById("onchromecast");
-    loc.style.display = 'none';
+    cc.style.display = 'none';
     //document.getElementById("media_control").style.opacity = 0.0;
   }
   else {
@@ -958,7 +958,7 @@ CastPlayer.prototype.updateDisplayMessage = function() {
     var loc = document.getElementById("locally");
     loc.style.display = 'none';
     var cc = document.getElementById("onchromecast");
-    loc.style.display = 'inline';  
+    cc.style.display = 'inline';  
     //document.getElementById("media_control").style.opacity = 0.5;
     var pathtoks = selectedMediaURL.split("/");
     document.getElementById("playerstate").innerHTML = 
