@@ -502,7 +502,7 @@ div.dirlisting div.dirlisting {
 }
 
 #medialist > div.dirlisting > div.dirlisting > p {
-	font-size: 130%;
+	font-size: 120%;
 	font-weight: bold;
 }
 
@@ -527,7 +527,6 @@ div.dirlisting div.dirlisting {
 
 #upperbar {
 	position: fixed;
-	height: 35px;
 	left: 0px;
 	top: 0px;
 	width: 100%;
@@ -536,7 +535,7 @@ div.dirlisting div.dirlisting {
     background-color: black;
 	color: white;
 	font-weight: bold;
-	font-size: 130%; 
+	font-size: 120%; 
 	opacity: 0.7;
 	padding: 10px;
 }
