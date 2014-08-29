@@ -1095,6 +1095,8 @@ CastPlayer.prototype.requestFullScreen = function() {
  * Exit full screen mode 
  */
 CastPlayer.prototype.cancelFullScreen = function() {
+  var mv = document.getElementsByClassName("imageSub")[0];
+  mv.style.display = 'block';
   // Supports most browsers and their versions.
   var requestMethod = document.cancelFullScreen || document.webkitCancelFullScreen;
 
