@@ -328,7 +328,7 @@ CastPlayer.prototype.selectMediaByURL = function(url) {
     var loc = document.getElementById("locally");
     loc.style.display = 'inline';
     var cc = document.getElementById("onchromecast");
-    loc.style.display = 'none';
+    cc.style.display = 'none';
     // if( this.localPlayerState == PLAYER_STATE.PLAYING ) {
       this.localPlayerState = PLAYER_STATE.IDLE;
       this.playMediaLocally(0);
