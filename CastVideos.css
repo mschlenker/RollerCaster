@@ -524,6 +524,7 @@ div.dirlisting div.dirlisting {
 	border-top-width: 1px;
 	border-color: gray;
 	cursor: pointer;
+	margin: 6px;
 }
 
 #toggleplayer {
