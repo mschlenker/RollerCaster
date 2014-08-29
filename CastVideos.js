@@ -252,6 +252,7 @@ CastPlayer.prototype.sessionListener = function(e) {
       this.loadMedia(this.currentMediaIndex);
     }
     this.session.addUpdateListener(this.sessionUpdateListener.bind(this));
+    this.togglePlayer.bind(this);
   }
 }
 
