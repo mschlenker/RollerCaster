@@ -142,7 +142,9 @@ CastPlayer.prototype.traverseLinks = function() {
     }
   }
   var tp = document.getElementById("toggleplayer");
+  tp.style.display = 'none';
   tp.addEventListener('click', this.togglePlayer.bind(this) );
+  this.togglePlayer.bind(this); 
 };
 
 CastPlayer.prototype.togglePlayer = function() {
@@ -315,6 +317,10 @@ CastPlayer.prototype.selectMediaByURL = function(url) {
   pi.style.marginLeft = -21 - PROGRESS_BAR_WIDTH + 'px';
 
   if( !this.currentMediaSession ) {
+    var tp = document.getElementById("toggleplayer");
+    tp.style.display = 'block';
+    var mv = document.getElementsByClassName("imageSub")[0];
+    mv.style.display = 'block';
     // if( this.localPlayerState == PLAYER_STATE.PLAYING ) {
       this.localPlayerState = PLAYER_STATE.IDLE;
       this.playMediaLocally(0);
