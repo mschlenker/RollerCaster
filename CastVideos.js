@@ -368,7 +368,7 @@ CastPlayer.prototype.selectMedia = function(mediaIndex) {
  */
 CastPlayer.prototype.launchApp = function() {
   console.log("launching app...");
-  this.togglePlayer.bind(this); 
+  // this.togglePlayer.bind(this); 
   chrome.cast.requestSession(
     this.sessionListener.bind(this),
     this.onLaunchError.bind(this));
@@ -402,7 +402,7 @@ CastPlayer.prototype.onLaunchError = function() {
  * Stops the running receiver application associated with the session.
  */
 CastPlayer.prototype.stopApp = function() {
-  this.togglePlayer.bind(this); 
+  // this.togglePlayer.bind(this); 
   this.session.stop(this.onStopAppSuccess.bind(this, 'Session stopped'),
       this.onError.bind(this));    
 };

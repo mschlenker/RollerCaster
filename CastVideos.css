@@ -400,7 +400,7 @@ div.imageSub {
   bottom: 100px;
   width: 720px;
   height: 405px;
-  z-index: 2000;
+  z-index: 998;
   margin: 0px 0px 0px 0px;
   padding:0px;
   // opacity:0.7;
@@ -416,7 +416,7 @@ div.imageSub div {
   padding: 0px;
 }
 div.imageSub div.blackbg {
-  z-index: 2000;
+  z-index: 998;
   bottom: 60px;
   left: 300px;
   width: 400px;
@@ -431,7 +431,7 @@ div.imageSub div.blackbg {
   padding:10px;
 }
 div.imageSub div.label {
-  z-index: 3000;
+  z-index: 999;
   bottom: 60px;
   left: 300px;
   width: 400px;
