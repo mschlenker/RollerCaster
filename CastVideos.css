@@ -514,6 +514,10 @@ div.dirlisting div.dirlisting {
 #medialist div.dirlisting a {
 	color: yellow;
 }
+#medialist div.dirlisting  {
+	cursor: pointer; 
+}
+
 
 #medialist div.dirlisting ul li {
 	list-style-type: none;
@@ -549,7 +553,7 @@ div.dirlisting div.dirlisting {
 	color: white;
 	font-weight: bold;
 	font-size: 120%; 
-	opacity: 0.7; 
+	opacity: 0.8; 
 	padding: 10px;
 }
 
