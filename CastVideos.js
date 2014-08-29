@@ -986,11 +986,13 @@ CastPlayer.prototype.updateMediaControlUI = function() {
   if( this.deviceState == DEVICE_STATE.ACTIVE ) {
     document.getElementById("casticonactive").style.display = 'block';
     document.getElementById("casticonidle").style.display = 'none';
+    document.getElementById("toggleplayer").style.display = 'none';
     var playerState = this.castPlayerState;
   }
   else {
     document.getElementById("casticonidle").style.display = 'block';
     document.getElementById("casticonactive").style.display = 'none';
+    document.getElementById("toggleplayer").style.display = 'block'
     var playerState = this.localPlayerState;
   }
 
