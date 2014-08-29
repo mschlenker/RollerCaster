@@ -964,6 +964,8 @@ CastPlayer.prototype.updateDisplayMessage = function() {
     document.getElementById("playerstate").innerHTML = 
       decodeURI(pathtoks[pathtoks.length - 1]) + " "
       + this.castPlayerState + " on " + this.session.receiver.friendlyName;
+    var ui = document.getElementById("upperinfo");
+    ui.innerHTML = decodeURI(pathtoks[pathtoks.length - 1]);
   }
 }
 
