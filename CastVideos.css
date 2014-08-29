@@ -520,6 +520,7 @@ div.dirlisting div.dirlisting {
 	border-width: 0px;
 	border-top-width: 1px;
 	border-color: gray;
+	cursor: pointer;
 }
 
 #toggleplayer {
@@ -548,7 +549,7 @@ div.dirlisting div.dirlisting {
 	color: white;
 	font-weight: bold;
 	font-size: 120%; 
-	/* opacity: 0.7; */ 
+	opacity: 0.7; 
 	padding: 10px;
 }
 
@@ -558,4 +559,5 @@ div.dirlisting div.dirlisting {
 
 #rollercaster {
 	color: yellow;
+	opacity: 1.0;
 }
