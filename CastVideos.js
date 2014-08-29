@@ -306,6 +306,9 @@ CastPlayer.prototype.sessionUpdateListener = function(isAlive) {
 CastPlayer.prototype.selectMediaByURL = function(url) {
   selectedMediaURL = url;
   console.log("url selected " + selectedMediaURL);
+  var pathtoks = selectedMediaURL.split("/");
+  var ui = document.getElementById("upperinfo");
+  ui.innerHTML = decodeURI(pathtoks[pathtoks.length - 1]); // this.mediaContents[mediaIndex]['title'];
   // return false;
   // reset progress bar
   var pi = document.getElementById("progress_indicator");
