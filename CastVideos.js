@@ -992,7 +992,11 @@ CastPlayer.prototype.updateMediaControlUI = function() {
   else {
     document.getElementById("casticonidle").style.display = 'block';
     document.getElementById("casticonactive").style.display = 'none';
-    document.getElementById("toggleplayer").style.display = 'block'
+    if (document.getElementById("upperinfo").innerHTML == "nothing") {
+      document.getElementById("toggleplayer").style.display = 'none';
+    } else {
+      document.getElementById("toggleplayer").style.display = 'block';
+    }
     var playerState = this.localPlayerState;
   }
 
