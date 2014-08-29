@@ -1081,10 +1081,11 @@ CastPlayer.prototype.hideVolumeSlider = function() {
  * Request full screen mode 
  */
 CastPlayer.prototype.requestFullScreen = function() {
+  var mv = document.getElementsByClassName("imageSub")[0];
+  mv.style.display = 'block';
   // Supports most browsers and their versions.
   var element = document.getElementById("video_element");
   var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen;
-
   if (requestMethod) { // Native full screen.
     requestMethod.call(element);
     console.log("requested fullscreen");
@@ -1095,11 +1096,8 @@ CastPlayer.prototype.requestFullScreen = function() {
  * Exit full screen mode 
  */
 CastPlayer.prototype.cancelFullScreen = function() {
-  var mv = document.getElementsByClassName("imageSub")[0];
-  mv.style.display = 'block';
   // Supports most browsers and their versions.
   var requestMethod = document.cancelFullScreen || document.webkitCancelFullScreen;
-
   if (requestMethod) { 
     requestMethod.call(document);
   } 
