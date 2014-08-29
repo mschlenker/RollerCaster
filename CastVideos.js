@@ -252,7 +252,6 @@ CastPlayer.prototype.sessionListener = function(e) {
       this.loadMedia(this.currentMediaIndex);
     }
     this.session.addUpdateListener(this.sessionUpdateListener.bind(this));
-    this.togglePlayer.bind(this);
   }
 }
 
@@ -930,12 +929,14 @@ CastPlayer.prototype.updateDisplayMessage = function() {
     document.getElementById("playerstatebg").style.display = 'none';
     document.getElementById("play").style.display = 'block';
     document.getElementById("video_image_overlay").style.display = 'none';
+    document.getElementsByClassName("imageSub")[0].style.display = 'block';
     //document.getElementById("media_control").style.opacity = 0.0;
   }
   else {
     document.getElementById("playerstate").style.display = 'block';
     document.getElementById("playerstatebg").style.display = 'block';
     document.getElementById("video_image_overlay").style.display = 'block';
+    document.getElementsByClassName("imageSub")[0].style.display = 'none';	  
     //document.getElementById("media_control").style.opacity = 0.5;
     var pathtoks = selectedMediaURL.split("/");
     document.getElementById("playerstate").innerHTML = 
