@@ -144,7 +144,8 @@ CastPlayer.prototype.traverseLinks = function() {
   var tp = document.getElementById("toggleplayer");
   tp.style.display = 'none';
   tp.addEventListener('click', this.togglePlayer.bind(this) );
-  this.togglePlayer.bind(this); 
+  var mv = document.getElementsByClassName("imageSub")[0];
+  mv.style.display = 'none';
 };
 
 CastPlayer.prototype.togglePlayer = function() {
