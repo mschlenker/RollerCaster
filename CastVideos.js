@@ -948,6 +948,8 @@ CastPlayer.prototype.updateDisplayMessage = function() {
     loc.style.display = 'inline';
     var cc = document.getElementById("onchromecast");
     cc.style.display = 'none';
+    var tp = document.getElementById("toggleplayer");
+    tp.style.display = 'block';
     //document.getElementById("media_control").style.opacity = 0.0;
   }
   else {
