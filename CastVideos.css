@@ -481,7 +481,7 @@ div.imageSub div.label {
 }
 
 div.dirlisting {
-	width: 99%;
+	width: 97%;
 	margin: 0px;
 	padding: 0px;
 	padding-left: 40px;
@@ -498,7 +498,7 @@ div.dirlisting div.dirlisting {
 }
 
 #medialist > div.dirlisting {
-	width: 98%;
+	width: 97%;
 }
 
 #medialist > div.dirlisting > div.dirlisting > p {

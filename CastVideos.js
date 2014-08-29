@@ -325,6 +325,10 @@ CastPlayer.prototype.selectMediaByURL = function(url) {
     tp.style.display = 'block';
     var mv = document.getElementsByClassName("imageSub")[0];
     mv.style.display = 'block';
+    var loc = document.getElementById("locally");
+    loc.style.display = 'inline';
+    var cc = document.getElementById("onchromecast");
+    loc.style.display = 'none';
     // if( this.localPlayerState == PLAYER_STATE.PLAYING ) {
       this.localPlayerState = PLAYER_STATE.IDLE;
       this.playMediaLocally(0);
@@ -940,13 +944,21 @@ CastPlayer.prototype.updateDisplayMessage = function() {
     document.getElementById("play").style.display = 'block';
     document.getElementById("video_image_overlay").style.display = 'none';
     document.getElementsByClassName("imageSub")[0].style.display = 'block';
+    var loc = document.getElementById("locally");
+    loc.style.display = 'inline';
+    var cc = document.getElementById("onchromecast");
+    loc.style.display = 'none';
     //document.getElementById("media_control").style.opacity = 0.0;
   }
   else {
     document.getElementById("playerstate").style.display = 'block';
     document.getElementById("playerstatebg").style.display = 'block';
     document.getElementById("video_image_overlay").style.display = 'block';
-    document.getElementsByClassName("imageSub")[0].style.display = 'none';	  
+    document.getElementsByClassName("imageSub")[0].style.display = 'none';
+    var loc = document.getElementById("locally");
+    loc.style.display = 'none';
+    var cc = document.getElementById("onchromecast");
+    loc.style.display = 'inline';  
     //document.getElementById("media_control").style.opacity = 0.5;
     var pathtoks = selectedMediaURL.split("/");
     document.getElementById("playerstate").innerHTML = 
