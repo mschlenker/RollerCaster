@@ -56,11 +56,11 @@ class MyDirectory
 
 	def print_html(baseurl)
 		if has_media_children?
-			puts "<div class=\"dirlisting\"><p>#{@name}</p>"
+			puts "<div class=\"dirlisting\"><p>#{@name.gsub("_", "")}</p>"
 			puts "<ul>" if @mediafiles.size > 0
                         @mediafiles.sort.each { |f|
 				niceuri = URI.escape(baseurl + "/" + f)
-                                puts "<li><a href=\"#{niceuri}\" class=\"medialink\">#{f}</a></li>"
+                                puts "<li><a href=\"#{niceuri}\" class=\"medialink\">#{f.gsub("_", "")}</a></li>"
                         }
 			puts "</ul>" if @mediafiles.size > 0
                         @subdirs.sort.each { |d|
