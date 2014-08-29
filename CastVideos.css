@@ -328,7 +328,7 @@ body {
   display:block; 
   background-image:url('imagefiles/audio_bg.png');
   position:relative;
-  z-index:1100;
+  z-index:10;
 }
 
 #audio_bg_track {
