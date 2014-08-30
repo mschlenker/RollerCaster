@@ -146,6 +146,8 @@ CastPlayer.prototype.traverseLinks = function() {
   tp.addEventListener('click', this.togglePlayer.bind(this) );
   var mv = document.getElementsByClassName("imageSub")[0];
   mv.style.display = 'none';
+  document.getElementById("rollercaster").addEventListener('click', this.toggleInfo.bind(this) );
+  document.getElementById("infoclose").addEventListener('click', this.toggleInfo.bind(this) );
 };
 
 CastPlayer.prototype.togglePlayer = function() {
@@ -156,6 +158,15 @@ CastPlayer.prototype.togglePlayer = function() {
     mv.style.display = 'none';
   }
 };	
+
+CastPlayer.prototype.toggleInfo = function() {
+  var mv = document.getElementsByClassName("infooverlay")[0];
+  if (mv.style.display == 'none') {
+    mv.style.display = 'block';
+  } else {
+    mv.style.display = 'none';
+  }
+};
 
 CastPlayer.prototype.toggleVisibility = function(node) {
   // alert(node.nodeName); 

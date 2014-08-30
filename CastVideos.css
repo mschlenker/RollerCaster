@@ -564,6 +564,7 @@ div.dirlisting div.dirlisting {
 #rollercaster {
 	color: yellow;
 	opacity: 1.0;
+	cursor: pointer;
 }
 
 #erroroverlay, #infooverlay {
@@ -592,6 +593,8 @@ div.dirlisting div.dirlisting {
 	border-width: 2px;
 	border-style: solid; 
 	border-color: red;
+	opacity: 1.0;
+	background-color: black;
 }
 
 #infooverlay {
