@@ -601,6 +601,7 @@ div.dirlisting div.dirlisting {
 
 #infobox {
 	border-color: yellow;
+	width: 600px; 
 }
 
 #infoclose {
