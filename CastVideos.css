@@ -613,15 +613,16 @@ div.dirlisting div.dirlisting {
 	bottom: 0px; 
 	color: yellow; 
 	cursor: pointer; 
+	font-weight: bold;
 }
 
-a:link, a:visited, a:active, a:hover {
+#infobox a:link, #infobox a:visited, #infobox a:active, #infobox a:hover {
 	color: yellow; 
 	font-weight: bold;
 	text-decoration: none;
 }
 
-a:hover {
+#infobox a:hover {
 	text-decoration: underline;
 }
 	
