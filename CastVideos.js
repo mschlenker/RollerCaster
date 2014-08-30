@@ -191,10 +191,13 @@ CastPlayer.prototype.initializeLocalPlayer = function() {
  * receiverListener may be invoked at any time afterwards, and possibly more than once. 
  */
 CastPlayer.prototype.initializeCastPlayer = function() {
-
-  if (!chrome.cast || !chrome.cast.isAvailable) {
-    setTimeout(this.initializeCastPlayer.bind(this), 1000);
-    return;
+  try {
+    if (!chrome.cast || !chrome.cast.isAvailable) {
+      setTimeout(this.initializeCastPlayer.bind(this), 1000);
+      return;
+    }
+  } catch(e) {
+    document.getElementById("erroroverlay").style.display = 'block'; 	
   }
   // default set to the default media receiver app ID
   // optional: you may change it to point to your own
