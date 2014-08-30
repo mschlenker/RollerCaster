@@ -604,7 +604,7 @@ div.dirlisting div.dirlisting {
 }
 
 #infoclose {
-	position: absolute;
+	position: relative;
 	right: 0px;
 	bottom: 0px; 
 	color: yellow; 
