@@ -292,7 +292,7 @@ CastPlayer.prototype.receiverListener = function(e) {
   }
   else {
     console.log("receiver list empty");
-    document.getElementById("receiveroverlay").style.display = 'block'; 
+    // document.getElementById("receiveroverlay").style.display = 'block'; 
   }
 };
 
@@ -344,10 +344,10 @@ CastPlayer.prototype.selectMediaByURL = function(url) {
     loc.style.display = 'inline';
     var cc = document.getElementById("onchromecast");
     cc.style.display = 'none';
-    // if( this.localPlayerState == PLAYER_STATE.PLAYING ) {
+    if( this.localPlayerState == PLAYER_STATE.PLAYING ) {
       this.localPlayerState = PLAYER_STATE.IDLE;
       this.playMediaLocally(0);
-    // }
+    }
   }
   else {
     this.castPlayerState = PLAYER_STATE.IDLE;
@@ -607,7 +607,7 @@ CastPlayer.prototype.playMediaLocally = function(currentTime) {
   vi.style.display = 'none';
   this.localPlayer.style.display = 'block';
   if( this.localPlayerState != PLAYER_STATE.PLAYING && this.localPlayerState != PLAYER_STATE.PAUSED ) { 
-    this.localPlayer.src = selectedMediaURL; // "http://10.76.23.2//video.1/Spielfilme/Shame/Shame.mkv"; // this.mediaContents[this.currentMediaIndex]['sources'][0];
+    this.localPlayer.src = selectedMediaURL; 
     this.localPlayer.load();
     this.localPlayer.addEventListener('loadeddata', this.onMediaLoadedLocally.bind(this, currentTime));
   }
