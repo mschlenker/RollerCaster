@@ -160,7 +160,7 @@ CastPlayer.prototype.togglePlayer = function() {
 };	
 
 CastPlayer.prototype.toggleInfo = function() {
-  var mv = document.getElementsById("infooverlay");
+  var mv = document.getElementById("infooverlay");
   if (mv.style.display == 'none') {
     mv.style.display = 'block';
   } else {
