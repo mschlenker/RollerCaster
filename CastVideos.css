@@ -595,7 +595,7 @@ div.dirlisting div.dirlisting {
 }
 
 #infooverlay {
-	display: block;
+	display: none;
 	z-index: 4001;
 }
 
