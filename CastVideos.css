@@ -567,7 +567,7 @@ div.dirlisting div.dirlisting {
 }
 
 #erroroverlay {
-	position: absolute;
+	position: fixed;
 	left: 0px;
 	top: 0px;
 	width: 100%;
@@ -584,7 +584,8 @@ div.dirlisting div.dirlisting {
 #errorbox {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 200px;
+	margin-top: auto;
+	margin-bottom: auto;
 	padding: 20px;
 	width: 400px;
 	background-color: black;
