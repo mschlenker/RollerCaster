@@ -161,10 +161,10 @@ CastPlayer.prototype.togglePlayer = function() {
 
 CastPlayer.prototype.toggleInfo = function() {
   var mv = document.getElementById("infooverlay");
-  if (mv.style.display == 'none') {
-    mv.style.display = 'block';
-  } else {
+  if (mv.style.display == 'block') {
     mv.style.display = 'none';
+  } else {
+    mv.style.display = 'block';
   }
 };
 
