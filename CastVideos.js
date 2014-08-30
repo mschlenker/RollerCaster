@@ -292,6 +292,7 @@ CastPlayer.prototype.receiverListener = function(e) {
   }
   else {
     console.log("receiver list empty");
+    document.getElementById("receiveroverlay").style.display = 'block'; 
   }
 };
 

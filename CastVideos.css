@@ -567,7 +567,7 @@ div.dirlisting div.dirlisting {
 	cursor: pointer;
 }
 
-#erroroverlay, #infooverlay {
+#erroroverlay, #infooverlay, #receiveroverlay {
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -582,7 +582,7 @@ div.dirlisting div.dirlisting {
 	z-index: 4002; 
 }
 
-#errorbox, #infobox {
+#errorbox, #infobox, #receiverbox {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 150px;
@@ -602,7 +602,7 @@ div.dirlisting div.dirlisting {
 	z-index: 4001;
 }
 
-#infobox {
+#infobox, #receiverbox {
 	border-color: yellow;
 	width: 600px; 
 }
