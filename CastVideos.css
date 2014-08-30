@@ -586,10 +586,12 @@ div.dirlisting div.dirlisting {
 	margin-right: auto;
 	margin-top: auto;
 	margin-bottom: auto;
+	padding: 20px;
 	width: 400px;
 	background-color: black;
 	color: white;
 	border-width: 2px;
+	border-style: solid; 
 	border-color: red;
 }
 
