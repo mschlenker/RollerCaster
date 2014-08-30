@@ -566,7 +566,7 @@ div.dirlisting div.dirlisting {
 	opacity: 1.0;
 }
 
-#erroroverlay {
+#erroroverlay, #infooverlay {
 	position: fixed;
 	left: 0px;
 	top: 0px;
@@ -581,11 +581,10 @@ div.dirlisting div.dirlisting {
 	z-index: 4002; 
 }
 
-#errorbox {
+#errorbox, #infobox {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-top: 250px;
 	padding: 20px;
 	width: 400px;
 	background-color: black;
@@ -595,3 +594,18 @@ div.dirlisting div.dirlisting {
 	border-color: red;
 }
 
+#infooverlay {
+	display: block;
+	z-index: 4001;
+}
+
+#infobox {
+	border-color: yellow;
+}
+
+#infoclose {
+	position: absolute;
+	right: 0px;
+	bottom: 0px; 
+	color: yellow; 
+}
