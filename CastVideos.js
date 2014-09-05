@@ -336,26 +336,18 @@ CastPlayer.prototype.selectMediaByURL = function(url) {
   pi.style.marginLeft = -21 - PROGRESS_BAR_WIDTH + 'px';
 
   if( !this.currentMediaSession ) {
-    // var tp = document.getElementById("toggleplayer");
-    // tp.style.display = 'block';
-    var mv = document.getElementsByClassName("imageSub")[0];
-    mv.style.display = 'block';
-    var loc = document.getElementById("locally");
-    loc.style.display = 'inline';
-    var cc = document.getElementById("onchromecast");
-    cc.style.display = 'none';
-    if( this.localPlayerState == PLAYER_STATE.PLAYING ) {
-      this.localPlayerState = PLAYER_STATE.IDLE;
-      this.playMediaLocally(0);
-    }
+    document.getElementsByClassName("imageSub")[0].style.display = 'block';
+    document.getElementById("locally").style.display = 'inline';
+    document.getElementById("onchromecast").style.display = 'none';
+    // if( this.localPlayerState == PLAYER_STATE.PLAYING ) {
+    this.localPlayerState = PLAYER_STATE.IDLE;
+    this.playMediaLocally(0);
+    // }
   }
   else {
     this.castPlayerState = PLAYER_STATE.IDLE;
     this.playMedia();
   }
-  // this.selectMediaUpdateUI(mediaIndex);
-  // sleep(3000);
-  // return false; 
 }
 
 /**
