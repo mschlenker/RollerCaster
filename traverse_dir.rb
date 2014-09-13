@@ -192,6 +192,7 @@ infoclose.text = "[close]"
 mainvid = body.add_element("div")
 mainvid.attributes["id"] = "main_video"
 imagesub = mainvid.add_element("div") 
+imagesub.attributes["class"] = "imageSub" 
 d = imagesub.add_element("div")
 d.attributes["class"] = "blackbg"
 d.attributes["id"] = "playerstatebg"
