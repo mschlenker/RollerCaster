@@ -130,7 +130,7 @@ CastPlayer.prototype.traverseLinks = function() {
         // console.log("Found p"); // do nothing
 	childnodes[j].addEventListener('click', this.toggleVisibility.bind(this, childnodes[j]) );
       } else {
-        // childnodes[j].style.display = 'none';
+        childnodes[j].style.display = 'none';
       }  
     }
   }

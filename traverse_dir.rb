@@ -216,6 +216,7 @@ v = imagesub.add_element("video")
 v.attributes["id"] = "video_element"
 
 mediacontrol = mainvid.add_element("div")
+mediacontrol.attributes["id"] = "media_control" 
 [ "play", "pause", "progress_bg", "progress", "progress_indicator", "fullscreen_expand", "fullscreen_collapse", "casticonactive", "casticonidle", "audio_bg", "audio_bg_track", "audio_indicator", "audio_bg_level", "audio_on", "audio_off", "duration" ].each { |x|
 	y = mediacontrol.add_element("div")
 	y.attributes["id"] = x 
