@@ -68,8 +68,9 @@ class MyDirectory
 					niceuri = URI.escape(baseurl + "/" + f)
 					li = list.add_element("li") 
 					a = li.add_element("a")
-					a.attributes["href"] = f.gsub("_", " ")
+					a.attributes["href"] =niceuri
 					a.attributes["class"] = "medialink" 
+					a.text = f.gsub("_", " ") 
 				}
 			end
 			@subdirs.sort.each { |d|
