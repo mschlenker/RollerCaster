@@ -121,7 +121,7 @@ meta.attributes["content"] = "text/html; charset=UTF-8"
 link = head.add_element("link")
 link.attributes["rel"] = "stylesheet"
 link.attributes["type"] = "text/css"
-link.attributes["href"] = "CastVideos.js"
+link.attributes["href"] = "CastVideos.css"
 script = head.add_element("script")
 script.attributes["type"]  = "text/javascript"
 script.attributes["source"]  = "https://www.gstatic.com/cv/js/sender/v1/cast_sender.js"
