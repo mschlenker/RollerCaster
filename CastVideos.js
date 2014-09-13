@@ -113,7 +113,7 @@ var CastPlayer = function() {
 };
 
 CastPlayer.prototype.traverseLinks = function() {
-  var lst = document.getElementById("medialist");
+  var lst = document.getElementById("medialist").getElementsByTagName("div")[0];
   var links = lst.getElementsByTagName("a");
   // alert(links.length);
   selectedMediaURL = links[0].getAttribute("href");
