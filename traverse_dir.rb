@@ -58,12 +58,16 @@ class MyDirectory
 
 	def print_xml(baseurl, parent)
 		if has_media_children?
-			dirname = parent.add_element("div")
-			dirname.attributes["class"] = "dirlisting"
-			dirp = dirname.add_element("p")
-			dirp.text = @name.gsub("_", " ")
+			realpar = parent
+			unless @name.strip == ""
+				dirname = parent.add_element("div")
+				dirname.attributes["class"] = "dirlisting"
+				dirp = dirname.add_element("p")
+				dirp.text = @name.gsub("_", " ")
+				realpar = dirname
+			end
 			if @mediafiles.size > 0
-				list = dirname.add_element("ul")
+				list = realpar.add_element("ul")
 				@mediafiles.sort.each { |f|
 					niceuri = URI.escape(baseurl + "/" + f)
 					li = list.add_element("li") 
@@ -74,7 +78,7 @@ class MyDirectory
 				}
 			end
 			@subdirs.sort.each { |d|
-				d.print_xml(baseurl + "/" + d.name, dirname) 
+				d.print_xml(baseurl + "/" + d.name, realpar) 
                         }
                 end
 	end	
