@@ -137,6 +137,7 @@ upperb = body.add_element("div")
 upperb.attributes["id"] = "upperbar"
 rollerc = upperb.add_element("span")
 rollerc.text = "RollerCaster"
+rollerc.attributes["id"] = "rollercaster" 
 upperb.add REXML::Text.new(" · ")
 upperinf = REXML::Element.new("span")
 upperinf.text = "nothing"
