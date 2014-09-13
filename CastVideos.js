@@ -113,7 +113,7 @@ var CastPlayer = function() {
 };
 
 CastPlayer.prototype.traverseLinks = function() {
-  var lst = document.getElementById("medialist").getElementsByTagName("div")[0];
+  var lst = document.getElementById("medialist"); //.getElementsByTagName("div")[0];
   var links = lst.getElementsByTagName("a");
   // alert(links.length);
   selectedMediaURL = links[0].getAttribute("href");
@@ -130,7 +130,7 @@ CastPlayer.prototype.traverseLinks = function() {
         // console.log("Found p"); // do nothing
 	childnodes[j].addEventListener('click', this.toggleVisibility.bind(this, childnodes[j]) );
       } else {
-        childnodes[j].style.display = 'none';
+        // childnodes[j].style.display = 'none';
       }  
     }
   }
