@@ -70,11 +70,34 @@ class MyDirectory
 				list = realpar.add_element("ul")
 				@mediafiles.sort.each { |f|
 					niceuri = URI.escape(baseurl + "/" + f)
+					# $stderr.puts(@fullpath + File::SEPARATOR + f)
 					li = list.add_element("li") 
 					a = li.add_element("a")
 					a.attributes["href"] =niceuri
 					a.attributes["class"] = "medialink" 
-					a.text = f.gsub("_", " ") 
+					#if system("which ffmpeg > /dev/null")
+					#	duration = ""
+					#	resolution = ""
+					#	IO.popen("ffmpeg -hide_banner -i '" + @fullpath + File::SEPARATOR + f + "' 2>&1") { |l|
+					#		while l.gets 
+					#			line = $_.strip
+					#			# $stderr.puts line
+					#			# $stderr.puts line
+					#			if line =~  /Duration\: ([0-9][0-9]\:[0-9][0-9]\:[0-9][0-9])\./  # Duration: 00:54:01.18
+					#				# $stderr.puts $1
+					#				duration = $1 
+					#			end
+					#			if line =~ /Stream.*Video.*\s([0-9]+x[0-9]+)\s/ 
+					#				# $stderr.puts $1
+					#				resolution = $1 
+					#			end
+					#		end
+					#	}
+					#	# $stderr.puts duration + " " + resolution  
+					#	a.text = f.gsub("_", " ") + " " + duration + " " + resolution 
+					#else
+						a.text = f.gsub("_", " ") 
+					#end
 				}
 			end
 			@subdirs.sort.each { |d|
@@ -88,8 +111,31 @@ class MyDirectory
 			puts "<div class=\"dirlisting\"><p>#{@name.gsub("_", " ")}</p>"
 			puts "<ul>" if @mediafiles.size > 0
                         @mediafiles.sort.each { |f|
+				duration = ""
+				resolution = ""
+				if system("which ffmpeg > /dev/null")
+					duration = ""
+					resolution = ""
+					IO.popen("ffmpeg -hide_banner -i '" + @fullpath + File::SEPARATOR + f.gsub("'", "\\'") + "' 2>&1") { |l|
+						while l.gets 
+							line = $_.strip
+							# $stderr.puts line
+							# $stderr.puts line
+							if line =~  /Duration\: ([0-9][0-9]\:[0-9][0-9]\:[0-9][0-9])\./  # Duration: 00:54:01.18
+								# $stderr.puts $1
+								duration = $1 
+							end
+							if line =~ /Stream.*Video.*\s([0-9]+x[0-9]+)\s/ 
+								# $stderr.puts $1
+								resolution = $1 
+							end
+						end
+					}
+					# $stderr.puts duration + " " + resolution  
+					# a.text = f.gsub("_", " ") + " " + duration + " " + resolution 
+				end
 				niceuri = URI.escape(baseurl + "/" + f)
-                                puts "<li><a href=\"#{niceuri}\" class=\"medialink\">#{f.gsub("_", " ")}</a></li>"
+                                puts "<li><a href=\"#{niceuri}\" class=\"medialink\">" + f.gsub("_", " ") + "</a> " + duration + " " + resolution + "</li>"
                         }
 			puts "</ul>" if @mediafiles.size > 0
                         @subdirs.sort.each { |d|
